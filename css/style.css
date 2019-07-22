@@ -1,4 +1,147 @@
-.mainwrapper{
-    padding: 20px 20px;
-    border: 1px solid;
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+h1{
+    font-size: 4em;
+    color: #2d3c49;
+    margin-block-start: 0.1em;
+    margin-block-end: -0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #7d97ad;
+}
+
+h3{
+    color: #000000;
+    margin-block-start: 0.1em;
+    margin-block-end: 1.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+header img{
+    width: 25%;
+    margin-bottom: 18px;
+}
+
+.border{
+    border: solid 1px #7d97ad;;
+    margin-bottom: 30px
+}
+
+.flexbox{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.marginbetween{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.refelement{
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.refelement a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 70%;
+}
+
+.refelement p{
+    display: block;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+}
+
+.mainwrapper{
+    padding: 50px 80px;
+}
+
+
+
+
+
+
+
+/* MQ */
+
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {
+ 
+}  */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 320px){
+    .nameAndprofession{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .mainwrapper{
+        padding: 40px 40px;
+    }    
+    body{
+        text-align: center;
+    }
+   
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }  
+    header img{
+        width:17%;
+    }
+    .nameAndprofession{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+} 
+
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    section{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .refcontainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    header img{
+        width:12%;
+    }
+}
+
